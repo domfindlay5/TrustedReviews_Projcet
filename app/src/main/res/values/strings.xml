@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trusted Reviews</string>
+    <string name="write_review">Write Review</string>
+    <string name="view_review">View Review</string>
+    <string name="logo">logo</string>
+    <string name="scan">Scan</string>
+    <string name="qr_code">QR Code</string>
+</resources>
