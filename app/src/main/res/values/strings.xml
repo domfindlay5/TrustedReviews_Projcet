@@ -7,5 +7,6 @@
     <string name="qr_code">QR Code</string>
     <string name="step_1">Step 1of4:</string>
     <string name="your_items_header">Your Items</string>
-    <string name="textview_item1">TextView</string>
+    <string name="txtView_item1">TextView</string>
+    <string name="ItemTxtView2">TextView</string>
 </resources>
