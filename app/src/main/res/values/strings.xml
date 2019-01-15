@@ -9,4 +9,5 @@
     <string name="your_items_header">Your Items</string>
     <string name="txtView_item1">TextView</string>
     <string name="ItemTxtView2">TextView</string>
+    <string name="please_type_an_item">please type an item</string>
 </resources>
