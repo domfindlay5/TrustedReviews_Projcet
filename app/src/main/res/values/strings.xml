@@ -5,4 +5,7 @@
     <string name="logo">logo</string>
     <string name="scan">Scan</string>
     <string name="qr_code">QR Code</string>
+    <string name="step_1">Step 1of4:</string>
+    <string name="your_items_header">Your Items</string>
+    <string name="textview_item1">TextView</string>
 </resources>
