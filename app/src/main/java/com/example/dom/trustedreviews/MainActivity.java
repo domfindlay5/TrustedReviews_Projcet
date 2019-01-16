@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button scanQRBtn = (Button)findViewById(R.id.writeReviewBtn);
-        scanQRBtn.setOnClickListener(new View.OnClickListener() {
+        Button writeReviewBtn = (Button)findViewById(R.id.writeReviewBtn);
+        writeReviewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), ScanQRActivity.class);
