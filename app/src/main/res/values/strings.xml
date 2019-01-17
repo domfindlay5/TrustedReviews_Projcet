@@ -7,6 +7,8 @@
     <string name="qr_code">QR Code</string>
     <string name="step_1">Step 1of4:</string>
     <string name="your_items_header">Your Items</string>
+    <string name="comments_header"> Comments </string>
+    <string name="ratings_header">Ratings </string>
     <string name="txtView_item1">TextView</string>
     <string name="ItemTxtView2">TextView</string>
     <string name="please_type_an_item">please type an item</string>
