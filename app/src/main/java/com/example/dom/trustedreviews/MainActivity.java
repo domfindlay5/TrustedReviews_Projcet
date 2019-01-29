@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // set object
         Button writeReviewBtn = (Button)findViewById(R.id.writeReviewBtn);
         writeReviewBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#70afbf"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".RatingActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -40,7 +41,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="208dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/step_1"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
