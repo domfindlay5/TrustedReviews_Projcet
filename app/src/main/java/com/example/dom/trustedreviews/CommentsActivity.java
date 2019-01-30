@@ -20,6 +20,18 @@ public class CommentsActivity extends AppCompatActivity {
         //prg=(ProgressBar)findViewById(R.id.progressBar);
         //prg.setProgress(75);
 
+        // Back button to Ratings
+        // set object
+        //Button backPgBtn = (Button)findViewById(R.id.backBtn);
+        // pass on click listener
+      //  backPgBtn.setOnClickListener(new View.OnClickListener() {
+            //@Override
+           // public void onClick(View v) {
+          //      Intent startIntent = new Intent(getApplicationContext(),RatingActivity.class);
+               // startActivity(startIntent);
+          //  }
+      //  });
+
 
     }
 }

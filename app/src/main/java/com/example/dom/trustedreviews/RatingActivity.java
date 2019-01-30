@@ -33,6 +33,19 @@ public class RatingActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        // Back Button to Items
+        // set object
+        Button backPgBtn = (Button)findViewById(R.id.backBtn);
+        // pass on click listener
+        backPgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),ItemsActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }

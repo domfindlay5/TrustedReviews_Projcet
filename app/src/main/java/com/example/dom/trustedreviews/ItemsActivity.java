@@ -24,6 +24,7 @@ public class ItemsActivity extends AppCompatActivity {
         prg=(ProgressBar)findViewById(R.id.progressBar);
         prg.setProgress(25);
 
+        // Next Button to Ratings
         // set object
         Button nextPgBtn = (Button)findViewById(R.id.nextBtn);
         // pass on click listener
@@ -34,5 +35,17 @@ public class ItemsActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+        // Back Button to Main
+        //set object
+        Button backPgBtn = (Button)findViewById(R.id.backBtn);
+        // pass on click listener
+        backPgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 }
