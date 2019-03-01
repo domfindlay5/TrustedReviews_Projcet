@@ -35,17 +35,6 @@ public class ItemsActivity extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
-        // Back Button to Main
-        //set object
-        Button backPgBtn = (Button)findViewById(R.id.backBtn);
-        // pass on click listener
-        backPgBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(startIntent);
-            }
-        });
 
     }
 }
