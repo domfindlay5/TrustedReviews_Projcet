@@ -13,18 +13,18 @@ import android.widget.TextView;
 public class CommentsActivity extends AppCompatActivity {
 
     ProgressBar prg;
-    String CommentStep = "1";
+    //String newtotalTxtView = totalTxtView + 1;
 
     @Override
     protected void onCreate  (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
 
-        final TextView totalTxtView = (TextView) findViewById(R.id.totalTxtView);
-        totalTxtView.setText("Item 1 of 4");
-
         TextView stepsTxtView = (TextView) findViewById(R.id.stepstxtView);
         stepsTxtView.setText("Step 3 of 4:");
+
+        final TextView totalTxtView = (TextView) findViewById(R.id.totalTxtView);
+        totalTxtView.setText("Item 1 of 4");
 
 
         prg=(ProgressBar)findViewById(R.id.progressBar);
