@@ -14,6 +14,7 @@ public class CommentsActivity extends AppCompatActivity {
 
     ProgressBar prg;
     //String newtotalTxtView = totalTxtView + 1;
+    int Step = 1;
 
     @Override
     protected void onCreate  (Bundle savedInstanceState){
@@ -37,7 +38,8 @@ public class CommentsActivity extends AppCompatActivity {
         nextCommentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                totalTxtView.setText("Item 2 of 4");
+                Step++;
+                totalTxtView.setText("Item " + (Integer.toString(Step) + " of 4 "));
             }
         });
 
@@ -48,7 +50,8 @@ public class CommentsActivity extends AppCompatActivity {
         PrevCommentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                totalTxtView.setText("Item 1 of 4");
+                Step--;
+                totalTxtView.setText("Item " + (Integer.toString(Step) + " of 4 "));
             }
         });
 

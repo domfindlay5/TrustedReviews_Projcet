@@ -45,13 +45,15 @@ public class ItemsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent startIntent = new Intent(getApplicationContext(),RatingActivity.class);
-                startActivity(startIntent);
+
 
                 item1 = text_input_item1.getText().toString();
                 item2 = text_input_item2.getText().toString();
                 item3 = text_input_item3.getText().toString();
                 item4 = text_input_item4.getText().toString();
+
+                Intent startIntent = new Intent(getApplicationContext(),RatingActivity.class);
+                startActivity(startIntent);
 
                 showToast(item1 + item2 + item3 + item4);
             }
