@@ -12,22 +12,25 @@ public class PreviewActivity extends AppCompatActivity {
 
     ProgressBar prg;
     RatingBar previewRating;
-    int Step = 1;
+    int Item = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview);
 
+        /* set step number to 4 */
         TextView stepsTxtView = (TextView) findViewById(R.id.stepstxtView);
         stepsTxtView.setText("Step 4 of 4:");
 
         final TextView totalTxtView = (TextView) findViewById(R.id.totalTxtView);
         totalTxtView.setText("Item 1 of 4");
 
+        /* set progress bar to 100 */
         prg=(ProgressBar)findViewById(R.id.progressBar);
         prg.setProgress(100);
 
+        /* find rating bar previewRating */
         previewRating = (RatingBar) findViewById(R.id.PreviewratingBar);
 
         // Next comment Button
@@ -37,8 +40,9 @@ public class PreviewActivity extends AppCompatActivity {
         nextPreviewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Step++;
-                totalTxtView.setText("Item " + (Integer.toString(Step) + " of 4 "));
+                /* increment item */
+                Item++;
+                totalTxtView.setText("Item " + (Integer.toString(Item) + " of 4 "));
             }
         });
 
@@ -49,8 +53,8 @@ public class PreviewActivity extends AppCompatActivity {
         PrevCommentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Step--;
-                totalTxtView.setText("Item " + (Integer.toString(Step) + " of 4 "));
+                Item--;
+                totalTxtView.setText("Item " + (Integer.toString(Item) + " of 4 "));
             }
         });
 

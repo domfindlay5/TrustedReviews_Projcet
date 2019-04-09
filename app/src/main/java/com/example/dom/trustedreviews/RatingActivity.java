@@ -28,12 +28,15 @@ public class RatingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating);
 
+        /* set step number to 2 */
         TextView stepsTxtView = (TextView) findViewById(R.id.stepstxtView);
         stepsTxtView.setText("Step 2 of 4:");
 
+        /* set progress bar to 50 */
         prg = (ProgressBar) findViewById(R.id.progressBar);
         prg.setProgress(50);
 
+        /* find all rating bars */
         ratingBar1 = (RatingBar) findViewById(R.id.ratingBar1);
         ratingBar2 = (RatingBar) findViewById(R.id.ratingBar2);
         ratingBar3 = (RatingBar) findViewById(R.id.ratingBar3);

@@ -25,13 +25,16 @@ public class ItemsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
 
+        /* set step number to 1 */
         TextView stepsTxtView = (TextView) findViewById(R.id.stepstxtView);
         stepsTxtView.setText("Step 1 of 4:");
 
+        /* set progress bar to 25 */
         prg=(ProgressBar)findViewById(R.id.progressBar);
         prg.setProgress(25);
 
 
+        /* find all text views */
         text_input_item1 = (EditText) findViewById(R.id.text_input_item1);
         text_input_item2 = (EditText) findViewById(R.id.text_input_item2);
         text_input_item3 = (EditText) findViewById(R.id.text_input_item3);
@@ -46,7 +49,7 @@ public class ItemsActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-
+                /* get the value of all text views */
                 item1 = text_input_item1.getText().toString();
                 item2 = text_input_item2.getText().toString();
                 item3 = text_input_item3.getText().toString();
@@ -55,12 +58,13 @@ public class ItemsActivity extends AppCompatActivity {
                 Intent startIntent = new Intent(getApplicationContext(),RatingActivity.class);
                 startActivity(startIntent);
 
+                /* call toast method and insert 4 items */
                 showToast(item1 + item2 + item3 + item4);
             }
         });
 
     }
-
+    /* create a toast message*/
     private void showToast(String text) {
         Toast.makeText(ItemsActivity.this,text, Toast.LENGTH_SHORT).show();
     }
